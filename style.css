@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('images/NightSky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: sticky;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.profile img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.profile span {
+    color: #b2f0ff;
+    padding-left: 5px;
+    font-size: 40px;
+}
+
+.navBar {
+    width: 80%;
+}
+
+.navList {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.navList li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#btn {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+#btn img {
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 250px;
+}
+
+.info .innerInfo {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.innerInfo h1 {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.innerInfo span {
+    background: -webkit-linear-gradient(rgb(249, 240, 255), rgb(221, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.innerInfo h3 {
+    color: #7cffee;
+}
+
+.logos {
+    margin-top: 30px;
+}
+
+.logos a {
+    margin: 10px;
+
+}
+
+.photo {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.photo img {
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(79, 255, 255);
+}
+
+.section {
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    color: aliceblue;
+    border-radius: 10px;
+    width: 26%;
+    height: 200px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.skills h3 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.skills p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.DevTools {
+    color: aliceblue;
+    border-radius: 10px;
+    width: 26%;
+    height: 200px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.DevTools h3 {
+    font-size: 25px;
+
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.DevTools p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.about {
+    color: aliceblue;
+    border-radius: 10px;
+    width: 26%;
+    height: 200px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about h3 {
+    margin-top: 10px;
+    font-size: 25px;
+
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.about p {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+
+.ProjectSection h3 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projectsRow1 {
+    display: flex;
+    justify-content: center;
+}
+
+.projectsRow1 img {
+    width: 275px;
+    height: 140px;
+    margin: 10px;
+    opacity: 0.7;
+    border: 2px solid white;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projectsRow1 a:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+    border: none;
+    opacity: 1;
+}
+
+.project-link {
+    position: relative;
+    display: inline-block;
+
+}
+
+.project-link .overlay-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-decoration: none;
+}
+
+.projectsRow2 {
+    display: flex;
+    justify-content: center;
+}
+
+.projectsRow2 img {
+    width: 275px;
+    height: 140px;
+    margin: 10px;
+    border: 2px solid white;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.projectsRow2 a:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+    border: none;
+    opacity: 1;
+}
+
+.footer {
+    border-top: 1px solid white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: white;
+}
+
+.footer h3 {
+    font-size: 28px;
+    color: white;
+
+}
+
+.footer a {
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills h3 {
+        font-size: 20px;
+    }
+
+    .skills p {
+        font-size: 18px;
+    }
+
+    .DevTools h3 {
+        font-size: 20px;
+    }
+
+    .DevTools p {
+        font-size: 18px;
+    }
+
+    .about h3 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    #btn {
+        position: fixed;
+        top: 55px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .header a {
+        font-size: 16px;
+    }
+
+    #btn {
+        position: absolute;
+    }
+
+    .projectsRow1 img {
+        width: 200px;
+    }
+
+    .projectsRow2 img {
+        width: 200px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header a {
+        font-size: 14px;
+    }
+
+    .skills {
+        width: 200px;
+    }
+
+    .skills p {
+        font-size: 16px;
+    }
+
+    .DevTools {
+        width: 200px;
+    }
+
+    .DevTools p {
+        font-size: 16px;
+    }
+
+    .about {
+        width: 200px;
+    }
+
+    .photo img {
+        width: 175px;
+    }
+
+    .info h1 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .projectsRow1 img {
+        width: 175px;
+    }
+
+    .projectsRow2 img {
+        width: 175px;
+    }
+
+    .footer h4 {
+        font-size: 10px;
+    }
+
+    .footer h3 {
+        font-size: 16px
+    }
+
+    .footer img {
+        width: 20px;
+    }
+
+    #btn {
+
+        width: 43px;
+        height: 43px;
+    }
+
+    #btn img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        height: 40px;
+    }
+
+    .header a {
+        font-size: 12px;
+    }
+
+    .navList li {
+        padding: 0px 10px;
+    }
+
+    .header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .projects {
+        display: flex;
+
+
+    }
+
+    .projectsRow1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .projectsRow1 img {
+        width: 250px;
+    }
+
+
+
+    .projectsRow2 {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectsRow2 img {
+        width: 250px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .photo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo img {
+        width: 200px;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section .skills {
+        width: 400px;
+    }
+
+    .section .DevTools {
+        width: 400px;
+    }
+
+    .section .about {
+        width: 400px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 40px;
+    }
+
+    .header a {
+        font-size: 10px;
+    }
+
+    .navList li {
+        padding: 0px 10px;
+    }
+
+    .header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .projects {
+        display: flex;
+
+
+    }
+
+    .projectsRow1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .projectsRow1 img {
+        width: 200px;
+    }
+
+    .projectsRow2 {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectsRow2 img {
+        width: 200px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section .skills {
+        width: 350px;
+    }
+
+    .section .DevTools {
+        width: 350px;
+    }
+
+    .section .about {
+        width: 350px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    .header a {
+        font-size: 10px;
+    }
+
+    .navList li {
+      
+        padding: 0px 10px;
+    }
+
+    .header img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projectsRow1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .projectsRow1 img {
+        width: 275px;
+    }
+
+    .projectsRow2 {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectsRow2 img {
+        width: 275px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section .skills {
+        width: 350px;
+    }
+
+    .section .DevTools {
+        width: 350px;
+    }
+
+    .section .about {
+        width: 350px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+    .profile span {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 350px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projectsRow1 {
+        width: 100%;
+    }
+
+    .projectsRow1 img {
+        width: 275px;
+    }
+
+    .projectsRow2 {
+        width: 100%;
+    }
+
+    .projectsRow2 img {
+        width: 275px;
+    }
+
+    .section .skills {
+        width: 300px;
+    }
+
+    .section .DevTools {
+        width: 300px;
+    }
+
+    .section .about {
+        width: 300px;
+    }
+
+    .photo img {
+        width: 200px;
+    }
+
+
+    #btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    #btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info h1 {
+        font-size: 35px;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .profile span {
+        display: none;
+    }
+
+    .footer h4 {
+        font-size: 12px;
+    }
+
+    .footer h3 {
+        font-size: 18px
+    }
+
+    .footer img {
+        width: 25px;
+    }
+}
